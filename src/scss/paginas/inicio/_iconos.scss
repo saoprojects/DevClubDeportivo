@@ -1,0 +1,22 @@
+    @use 'base/mixins' as m;
+    @use 'base/variables' as v;
+
+.iconos-nosotros{
+    margin-top: 5rem;
+    @include m.tablet{
+            @include m.grid(3, 2rem);  
+    }
+}
+
+
+.icono{
+    text-align: center;
+    img{
+        width: 20rem;
+    }
+
+    h3{
+        font-size: clamp(2rem, -0.8rem + 8vw, 4rem); 
+        text-align: center;
+    }
+}
